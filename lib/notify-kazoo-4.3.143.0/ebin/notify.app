@@ -1,0 +1,12 @@
+{application,notify,
+             [{applications,[gen_smtp,inets,kazoo,kazoo_amqp,kazoo_apps,
+                             kazoo_data,kazoo_documents,kazoo_fax,kazoo_modb,
+                             kazoo_number_manager,kazoo_services,kazoo_stdlib,
+                             kazoo_templates,kazoo_voicemail,kazoo_web,kernel,
+                             lager,stdlib]},
+              {description,"Notify - Kazoo"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{notify_app,[]}},
+              {modules, [notify_app,notify_cnam_request,notify_deregister,notify_fax_inbound_error_to_email,notify_fax_inbound_to_email,notify_fax_outbound_error_to_email,notify_fax_outbound_to_email,notify_fax_util,notify_first_occurrence,notify_listener,notify_low_balance,notify_maintenance,notify_new_account,notify_password_recovery,notify_port_cancel,notify_port_request,notify_ported,notify_sup,notify_system_alert,notify_topup,notify_transaction,notify_util,notify_voicemail_full,notify_voicemail_to_email]},
+              {registered,[notify_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

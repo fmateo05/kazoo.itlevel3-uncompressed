@@ -1,0 +1,12 @@
+{application,escalus,
+             [{description,"Escalus is an Erlang XMPP client library"},
+              {vsn,"git"},
+              {registered,[]},
+              {applications,[kernel,stdlib,ssl,exml]},
+              {maintainers,["ESL"]},
+              {licenses,["Apache 2.0"]},
+              {links,[{"Github","https://github.com/esl/escalus"}]},
+              {build_tools,["make","rebar"]},
+              {mod,{escalus_app,[]}},
+              {env,[{config_file,"priv/escalus.config"}]},
+              {modules, ['csvkv','escalus','escalus_app','escalus_assert','escalus_auth','escalus_bosh','escalus_cleaner','escalus_client','escalus_compat','escalus_config','escalus_connection','escalus_ct','escalus_ejabberd','escalus_event','escalus_fresh','escalus_history_h','escalus_mongooseim','escalus_new_assert','escalus_overridables','escalus_pred','escalus_pubsub_stanza','escalus_server','escalus_session','escalus_stanza','escalus_story','escalus_sup','escalus_tcp','escalus_user_db','escalus_users','escalus_utils','escalus_ws','scram']}]}.

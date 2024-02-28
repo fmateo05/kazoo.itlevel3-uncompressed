@@ -1,0 +1,13 @@
+{application,kazoo_call,
+             [{applications,[crypto,kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_data,kazoo_documents,kazoo_endpoint,
+                             kazoo_media,kazoo_modb,kazoo_number_manager,
+                             kazoo_speech,kazoo_stdlib,kazoo_web,lager,
+                             stdlib]},
+              {description,"Representing calls in Kazoo since 2011"},
+              {id,[]},
+              {vsn,"kazoo-4.3.143.0"},
+              {modules, [kapps_call,kapps_call_command,kapps_call_util,kapps_conference,kapps_conference_command,kazoo_call_app,kazoo_call_sup,kz_call_response,kzc_recording,kzc_recordings_sup]},
+              {registered,[]},
+              {env,[]},
+              {mod,{kazoo_call_app,[]}}]}.

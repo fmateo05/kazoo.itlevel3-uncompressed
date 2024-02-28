@@ -1,0 +1,11 @@
+{application,braintree,
+             [{applications,[crossbar,kazoo,kazoo_amqp,kazoo_apps,kazoo_data,
+                             kazoo_documents,kazoo_services,kazoo_stdlib,
+                             kazoo_transactions,kazoo_web,kazoo_xml,kernel,
+                             lager,ssl,stdlib,xmerl]},
+              {description,"Integration with the Braintree service"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{braintree_app,[]}},
+              {modules, [braintree,braintree_addon,braintree_address,braintree_app,braintree_card,braintree_client_token,braintree_collect_recurring_req,braintree_customer,braintree_descriptor,braintree_discount,braintree_maintenance,braintree_refund,braintree_request,braintree_sale,braintree_shared_listener,braintree_standing_req,braintree_subscription,braintree_sup,braintree_transaction,braintree_update_req,braintree_util,cb_braintree]},
+              {registered,[braintree_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

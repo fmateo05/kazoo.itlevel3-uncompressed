@@ -1,0 +1,12 @@
+{application,apns,
+             [{description,"APNs provider for Apple Push Notification services (APNs) in Erlang. It supports the HTTP2 API."},
+              {vsn,"2.4.0"},
+              {id,"apns4erl"},
+              {pkg_name,apns4erl},
+              {registered,[]},
+              {applications,[kernel,stdlib,jsx,gun,base64url]},
+              {modules, ['apns','apns_app','apns_connection','apns_feedback','apns_os','apns_sup','apns_utils']},
+              {mod,{apns_app,[]}},
+              {licenses,["Apache 2.0"]},
+              {links,[{"Github","https://github.com/inaka/apns4erl"}]},
+              {build_tools,["rebar3"]}]}.

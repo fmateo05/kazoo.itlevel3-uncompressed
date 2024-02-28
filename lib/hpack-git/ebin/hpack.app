@@ -1,0 +1,11 @@
+{application,hpack,
+             [{description,"HPACK Implementation"},
+              {vsn,"git"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {pkg_name,hpack_erl},
+              {maintainers,["Joe DeVivo"]},
+              {licenses,["MIT"]},
+              {links,[{"Github","https://github.com/joedevivo/hpack"}]},
+              {modules, ['hpack','hpack_index','hpack_integer','hpack_string','huffman']}]}.

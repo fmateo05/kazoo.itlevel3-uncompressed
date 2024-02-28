@@ -1,0 +1,10 @@
+{application,reorder,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_call,
+                             kazoo_endpoint,kazoo_number_manager,kazoo_stdlib,
+                             kernel,lager,stdlib]},
+              {description,"Reorder - "},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{reorder_app,[]}},
+              {modules, [reorder_app,reorder_listener,reorder_route_req,reorder_sup]},
+              {registered,[reorder_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

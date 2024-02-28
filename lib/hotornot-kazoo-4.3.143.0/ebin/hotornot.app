@@ -1,0 +1,11 @@
+{application,hotornot,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_call,
+                             kazoo_data,kazoo_documents,kazoo_number_manager,
+                             kazoo_services,kazoo_stdlib,kernel,lager,stdlib,
+                             trie]},
+              {description,"HotOrNot - Rate calls based on prefix"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{hotornot_app,[]}},
+              {modules, [hon_rater,hon_trie,hon_trie_lru,hon_tries_sup,hon_util,hotornot_app,hotornot_config,hotornot_listener,hotornot_maintenance,hotornot_sup]},
+              {registered,[hotornot_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

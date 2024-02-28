@@ -1,0 +1,11 @@
+{application,base64url,
+             [{description,"URL safe base64-compatible codec"},
+              {vsn,"0.0.1"},
+              {id, "kazoo-4.3.142.itlevel3-p14-dirty"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {contributors,["Vladimir Dronnikov"]},
+              {licenses,["MIT"]},
+              {links,[{"Github","https://github.com/dvv/base64url"}]},
+              {modules, ['base64url']}]}.

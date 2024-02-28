@@ -1,0 +1,11 @@
+{application,hangups,
+             [{applications,[folsom,kazoo,kazoo_amqp,kazoo_apps,
+                             kazoo_documents,kazoo_endpoint,
+                             kazoo_number_manager,kazoo_stdlib,kernel,lager,
+                             stdlib]},
+              {description,"Listen for abnormal hangups and store them in Couch"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{hangups_app,[]}},
+              {modules, [hangups_app,hangups_channel_destroy,hangups_config,hangups_listener,hangups_maintenance,hangups_monitoring,hangups_query_listener,hangups_sup,hangups_util]},
+              {registered,[hangups_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

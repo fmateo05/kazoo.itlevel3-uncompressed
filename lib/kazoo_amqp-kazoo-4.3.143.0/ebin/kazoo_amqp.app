@@ -1,0 +1,10 @@
+{application,kazoo_amqp,
+ [{applications,[amqp_client,crypto,kazoo,kazoo_config,
+                 kazoo_stdlib,kernel,lager,rabbit_common,stdlib]},
+  {description,"AMQP client helpers for interacting with a AMQP server"},
+  {vsn,"kazoo-4.3.143.0"},
+  {modules, [gen_listener,kapi,kapi_asr,kapi_authn,kapi_authz,kapi_bookkeepers,kapi_call,kapi_callflow,kapi_camping,kapi_conf,kapi_conference,kapi_definition,kapi_delegate,kapi_dialplan,kapi_fax,kapi_fs,kapi_globals,kapi_hangups,kapi_im,kapi_inspector,kapi_leader,kapi_media,kapi_metaflow,kapi_money,kapi_nodes,kapi_notifications,kapi_offnet_resource,kapi_pivot,kapi_presence,kapi_rate,kapi_registration,kapi_resource,kapi_route,kapi_self,kapi_switch,kapi_sysconf,kapi_tasks,kapi_websockets,kazoo_amqp_app,kazoo_amqp_maintenance,kz_amqp_assignments,kz_amqp_bootstrap,kz_amqp_channel,kz_amqp_connection,kz_amqp_connection_sup,kz_amqp_connections,kz_amqp_federated_listeners_sup,kz_amqp_sup,kz_amqp_util,kz_api,listener_federator,listener_utils]},
+  {registered,[kz_amqp_connections,kz_amqp_assignments,
+               kz_amqp_sup,kz_amqp_connection_sup,
+               kz_amqp_bootstrap]},
+  {mod,{kazoo_amqp_app,[]}}]}.

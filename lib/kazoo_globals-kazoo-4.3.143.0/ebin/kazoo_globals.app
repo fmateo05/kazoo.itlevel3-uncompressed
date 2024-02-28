@@ -1,0 +1,10 @@
+{application,kazoo_globals,
+ [{applications,[amqp_client,crypto,kazoo,kazoo_amqp,
+                 kazoo_bindings,kazoo_config,kazoo_stdlib,kernel,
+                 lager,poolboy,stdlib]},
+  {description,"Register processes across the cluster"},
+  {id,[]},
+  {vsn,"kazoo-4.3.143.0"},
+  {modules, [kazoo_globals_app,kazoo_globals_init,kazoo_globals_sup,kz_global,kz_global_proxies_sup,kz_global_proxy,kz_globals,kz_nodes,kz_nodes_bindings]},
+  {registered,[kz_globals,kz_nodes]},
+  {mod,{kazoo_globals_app,[]}}]}.

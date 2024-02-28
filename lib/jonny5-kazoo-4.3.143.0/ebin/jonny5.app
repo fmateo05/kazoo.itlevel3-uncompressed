@@ -1,0 +1,13 @@
+{application,jonny5,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_call,kazoo_data,kazoo_documents,
+                             kazoo_endpoint,kazoo_events,kazoo_globals,
+                             kazoo_ledgers,kazoo_modb,kazoo_number_manager,
+                             kazoo_services,kazoo_stdlib,kernel,lager,stdlib]},
+              {description,"Jonny 5 - Short circuit accounts exceeding call volume"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{jonny5_app,[]}},
+              {modules, [j5_allotments,j5_authz_req,j5_balance_check_req,j5_channel_destroy,j5_channels,j5_flat_rate,j5_hard_limit,j5_limits,j5_per_minute,j5_request,j5_util,jonny5_app,jonny5_listener,jonny5_maintenance,jonny5_sup]},
+              {registered,[jonny5_cache,j5_channels,jonny5_listener,
+                           jonny5_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

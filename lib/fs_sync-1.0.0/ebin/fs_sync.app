@@ -1,0 +1,11 @@
+{application,fs_sync,
+             [{description,"Hot code reloader"},
+              {vsn,"1.0.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,syntax_tools,compiler,fs_event]},
+              {mod,{fs_sync_app,[]}},
+              {env,[]},
+              {maintainers,["Roman Galeev"]},
+              {licenses,["GNU GPL"]},
+              {links,[{"Github","https://github.com/jamhed/fs_sync"}]},
+              {modules, ['file_type','fs_sync','fs_sync_app','fs_sync_cfg','fs_sync_event','fs_sync_sup','fs_tracer','trace_fmt','type_handler']}]}.

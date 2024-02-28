@@ -1,0 +1,10 @@
+{application,camper,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_call,
+                             kazoo_documents,kazoo_endpoint,kazoo_events,
+                             kazoo_media,kazoo_stdlib,kernel,lager,stdlib]},
+              {description,"Camper - wait for the right moment"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{camper_app,[]}},
+              {modules, [camper_app,camper_init,camper_offnet_handler,camper_offnet_sup,camper_onnet_handler,camper_request_listener,camper_sup]},
+              {registered,[camper_sup,camper_offnet_sup,camper_onnet_handler]},
+              {vsn,"kazoo-4.3.143.0"}]}.

@@ -1,0 +1,11 @@
+{application,cccp,
+             [{applications,[crossbar,kazoo,kazoo_amqp,kazoo_apps,kazoo_call,
+                             kazoo_data,kazoo_documents,kazoo_endpoint,
+                             kazoo_media,kazoo_number_manager,kazoo_stdlib,
+                             kernel,lager,stdlib]},
+              {description,"CCCP - Calling Card Callback Platform"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{cccp_app,[]}},
+              {modules, [cb_cccps,cccp_app,cccp_callback_listener,cccp_callback_sup,cccp_handlers,cccp_listener,cccp_platform_listener,cccp_platform_sup,cccp_shared_listener,cccp_sup,cccp_util]},
+              {registered,[cccp_callback_sup,cccp_platform_sup,cccp_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

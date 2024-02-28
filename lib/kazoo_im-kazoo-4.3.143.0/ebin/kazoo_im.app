@@ -1,0 +1,12 @@
+{application,kazoo_im,
+             [{applications,[gproc,kazoo,kazoo_amqp,kazoo_apps,
+                             kazoo_documents,kazoo_endpoint,kazoo_ledgers,
+                             kazoo_number_manager,kazoo_schemas,
+                             kazoo_services,kazoo_stdlib,lager,stdlib]},
+              {description,"Representing IM in Kazoo"},
+              {id,[]},
+              {vsn,"kazoo-4.3.143.0"},
+              {modules, [kapps_im,kapps_im_command,kazoo_im_app,kazoo_im_sup,kz_im,kz_im_flat_rate,kz_im_offnet,kz_im_offnet_sup,kz_im_onnet,kz_im_onnet_sup]},
+              {registered,[]},
+              {env,[]},
+              {mod,{kazoo_im_app,[]}}]}.

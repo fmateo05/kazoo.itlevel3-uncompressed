@@ -1,0 +1,10 @@
+{application,kazoo_media,
+             [{applications,[cowboy,cowlib,kazoo,kazoo_amqp,kazoo_apps,
+                             kazoo_data,kazoo_documents,
+                             kazoo_services,kazoo_speech,kazoo_stdlib,
+                             kazoo_web,kernel,lager,stdlib]},
+              {description,"Kazoo Media provides support for generating media URLs as well as proxing media files"},
+              {vsn,"kazoo-4.3.143.0"},
+              {modules, [kazoo_media_app,kazoo_media_init,kazoo_media_maintenance,kazoo_media_sup,kz_media_cache_sup,kz_media_config,kz_media_doc,kz_media_file,kz_media_file_cache,kz_media_map,kz_media_proxy,kz_media_proxy_handler,kz_media_proxy_util,kz_media_store_proxy,kz_media_tts,kz_media_tts_cache,kz_media_url,kz_media_util]},
+              {registered,[kz_media_map,kz_media_cache_sup,kazoo_media_sup]},
+              {mod,{kazoo_media_app,[]}}]}.

@@ -1,0 +1,10 @@
+{application,pivot,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_call,
+                             kazoo_modb,kazoo_schemas,kazoo_stdlib,
+                             kazoo_translator,kazoo_web,kernel,lager,stdlib]},
+              {description,"Pivot - Accept 3rd party dialplan commands to control calls"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{pivot_app,[]}},
+              {modules, [pivot_app,pivot_call,pivot_calls_sup,pivot_handlers,pivot_listener,pivot_sup]},
+              {registered,[pivot_cache,pivot_calls_sup,pivot_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

@@ -1,0 +1,9 @@
+{application,kazoo_documents,
+ [{applications,[cowlib,erlang_localtime,kazoo,
+                 kazoo_data,kazoo_modb,kazoo_schemas,
+                 kazoo_services,kazoo_stdlib,kazoo_transactions,
+                 kazoo_web,kernel,lager,stdlib]},
+  {description,"Kazoo Document helper modules"},
+  {vsn,"kazoo-4.3.143.0"},
+  {modules, [kz_attachment,kz_call_event,kz_custom_sip_headers,kz_notification,kzd_access_lists,kzd_account_rate_limits,kzd_accounts,kzd_acls,kzd_activation_item,kzd_agent,kzd_alert,kzd_api_auth,kzd_app,kzd_apps_store,kzd_audit_logs,kzd_auth_module_config,kzd_blacklists,kzd_bookkeeper,kzd_bookkeepers,kzd_box_message,kzd_call_recording,kzd_call_recordings,kzd_call_waiting,kzd_caller_id,kzd_callflow,kzd_callflows,kzd_cccps,kzd_cdrs,kzd_clicktocall,kzd_cluster,kzd_comment,kzd_comments,kzd_conference,kzd_conferences,kzd_connectivity,kzd_device_rate_limits,kzd_devices,kzd_devices_notify,kzd_dialplans,kzd_directories,kzd_domains,kzd_endpoint,kzd_fax,kzd_fax_box,kzd_faxbox,kzd_faxes,kzd_find_numbers,kzd_flows,kzd_freeswitch,kzd_groups,kzd_ip,kzd_ips,kzd_item_plan,kzd_ledgers,kzd_limits,kzd_list_entries,kzd_lists,kzd_mailbox_message,kzd_media,kzd_menus,kzd_metaflow,kzd_metaflows,kzd_mms,kzd_module_utils,kzd_multi_factor_provider,kzd_notifications,kzd_phone_numbers,kzd_port_requests,kzd_profile,kzd_queue_update,kzd_queues,kzd_ratedeck,kzd_rates,kzd_resource_jobs,kzd_resource_selectors,kzd_resources,kzd_schema,kzd_schema_caller_id,kzd_service_plan,kzd_service_plans,kzd_services,kzd_shared_auth,kzd_skel,kzd_sms,kzd_sso_provider,kzd_storage,kzd_system_configs,kzd_task,kzd_tasks,kzd_temporal_rules,kzd_temporal_rules_sets,kzd_token_restrictions,kzd_transactions,kzd_trunkstore,kzd_ubiquiti_auth,kzd_user,kzd_user_auth,kzd_user_auth_recovery,kzd_user_auth_recovery_reset,kzd_users,kzd_vm_message_metadata,kzd_vmboxes,kzd_voicemail_box,kzd_voicemail_keys,kzd_webhook,kzd_webhook_attempts,kzd_webhooks,kzd_whitelabel]},
+  {registered,[]}]}.

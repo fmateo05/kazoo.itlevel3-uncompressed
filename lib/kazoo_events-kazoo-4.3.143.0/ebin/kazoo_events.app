@@ -1,0 +1,11 @@
+{application,kazoo_events,
+             [{applications,[gproc,kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_documents,kazoo_number_manager,
+                             kazoo_stdlib,kernel,lager,stdlib]},
+              {description,"Kazoo shared events for Applications"},
+              {id,"9fd3b140-8727-11e0-9d78-0800200c9a66"},
+              {vsn,"kazoo-4.3.143.0"},
+              {modules, [kazoo_events_app,kazoo_events_sup,kz_hooks,kz_hooks_listener,kz_hooks_shared_listener,kz_hooks_util]},
+              {registered,[kazoo_events_sup,kz_hooks_cache,kz_hooks_listener,
+                           kz_hooks_shared_listener]},
+              {mod,{kazoo_events_app,[]}}]}.

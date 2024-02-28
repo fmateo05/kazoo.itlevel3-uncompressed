@@ -1,0 +1,12 @@
+{application,blackhole,
+             [{applications,[cowboy,kazoo,kazoo_amqp,kazoo_apps,kazoo_auth,
+                             kazoo_bindings,kazoo_documents,kazoo_events,
+                             kazoo_modb,kazoo_stdlib,kazoo_token_buckets,
+                             kernel,lager,ssl,stdlib]},
+              {description,"blackhole - websocket"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{blackhole_app,[]}},
+              {modules, [bh_authz_subscribe,bh_call,bh_conference,bh_context,bh_events,bh_fax,bh_limits,bh_object,bh_ping,bh_skel,bh_token_auth,blackhole_app,blackhole_bindings,blackhole_config,blackhole_data_emitter,blackhole_init,blackhole_listener,blackhole_maintenance,blackhole_socket_callback,blackhole_socket_handler,blackhole_sup,blackhole_tracking,blackhole_util]},
+              {registered,[blackhole_listener,blackhole_sup,
+                           blackhole_tracking]},
+              {vsn,"kazoo-4.3.143.0"}]}.

@@ -1,0 +1,11 @@
+{application,registrar,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_data,
+                             kazoo_documents,kazoo_stdlib,kernel,lager,
+                             stdlib]},
+              {description,"Registrar For the Stars"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{registrar_app,[]}},
+              {modules, [reg_authn_req,reg_route_req,registrar_app,registrar_crypto,registrar_init,registrar_maintenance,registrar_shared_listener,registrar_shared_listener_sup,registrar_sup]},
+              {registered,[registrar_cache,registrar_sup,
+                           registrar_shared_listener_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

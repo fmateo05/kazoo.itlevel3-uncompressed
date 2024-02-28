@@ -1,0 +1,12 @@
+{application,webhooks,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_data,kazoo_documents,kazoo_events,kazoo_im,
+                             kazoo_modb,kazoo_stdlib,kazoo_web,kernel,lager,
+                             stdlib]},
+              {description,"Webhooks - HTTP events from Kazoo to you"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{webhooks_app,[]}},
+              {modules, [webhooks_app,webhooks_channel_answer,webhooks_channel_bridge,webhooks_channel_create,webhooks_channel_destroy,webhooks_channel_util,webhooks_disabler,webhooks_init,webhooks_listener,webhooks_maintenance,webhooks_mms,webhooks_notifications,webhooks_object,webhooks_parking,webhooks_shared_listener,webhooks_skel,webhooks_sms,webhooks_sup,webhooks_util]},
+              {registered,[webhooks_cache,webhooks_sup,
+                           webhooks_shared_listener]},
+              {vsn,"kazoo-4.3.143.0"}]}.

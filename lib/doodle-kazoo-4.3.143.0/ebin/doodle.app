@@ -1,0 +1,12 @@
+{application,doodle,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_data,kazoo_documents,kazoo_endpoint,
+                             kazoo_im,kazoo_number_manager,kazoo_stdlib,kernel,lager,
+                             stdlib]},
+              {description,"doodle - sms store and forward"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{doodle_app,[]}},
+              {modules, [doodle_app,doodle_listener,doodle_listener_sup,doodle_maintenance,doodle_sup,doodle_util,kz_flow,tf_device,tf_exe,tf_exe_listener,tf_exe_sup,tf_offnet,tf_reply,tf_resources,tf_user,tf_util]},
+              {registered,[doodle_cache,doodle_listener_sup,doodle_sup,
+                           tf_exe_listener,tf_exe_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.

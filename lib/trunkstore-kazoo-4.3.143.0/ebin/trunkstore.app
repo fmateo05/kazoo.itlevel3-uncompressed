@@ -1,0 +1,12 @@
+{application,trunkstore,
+             [{applications,[kazoo,kazoo_amqp,kazoo_apps,kazoo_caches,
+                             kazoo_call,kazoo_data,kazoo_documents,
+                             kazoo_endpoint,kazoo_number_manager,kazoo_stdlib,
+                             kernel,lager,stdlib]},
+              {description,"Trunk Store Backend - Authentication and Routing"},
+              {env,[{is_kazoo_app,true}]},
+              {mod,{trunkstore_app,[]}},
+              {modules, [trunkstore_app,trunkstore_handlers,trunkstore_listener,trunkstore_maintenance,trunkstore_sup,ts_callflow,ts_from_offnet,ts_from_onnet,ts_offnet_sup,ts_onnet_sup,ts_responder,ts_route_req,ts_util]},
+              {registered,[trunkstore_cache,ts_offnet_sup,trunkstore_sup,
+                           ts_onnet_sup]},
+              {vsn,"kazoo-4.3.143.0"}]}.
